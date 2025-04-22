@@ -8,7 +8,7 @@
     padding: 16px;
     overflow: hidden;
     transform: translateX(0px);
-    transition: 0.5s all ease;
+    transition: 0.4s all ease;
 }
 
 .Sidebar > div {
@@ -18,7 +18,7 @@
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
-    transition: 0.5s all ease 0.25s;
+    transition: 0.4s all ease 0.2s;
 }
 
 .Sidebar > div > div {
@@ -66,12 +66,12 @@
 #Hamburger:checked ~ .Sidebar {
     width: 0px;
     transform: translateX(-32px);
-    transition: 0.5s all ease 0.25s;
+    transition: 0.4s all ease 0.2s;
 }
 
 #Hamburger:checked ~ .Sidebar > div {
     transform: translateX(-425px);
-    transition: 0.5s all ease;
+    transition: 0.4s all ease;
 }
 
 @media (max-width : 376px) {

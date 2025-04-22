@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
 
-    <input id='Hamburger' type="checkbox" />
+    <input id='Hamburger' type="checkbox" defaultChecked />
 
       <nav>
         
