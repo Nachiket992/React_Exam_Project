@@ -1,0 +1,87 @@
+.Sidebar {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 16px;
+    overflow: hidden;
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+}
+
+.Sidebar > div {
+    height: 100%;
+    max-width: 393px;
+    min-width: 320px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.5s all ease 0.25s;
+}
+
+.Sidebar > div > div {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.Sidebar > div > div > h1 {
+    color: #48A6A7;
+    font-size: 1.75rem;
+}
+
+.Sidebar > div > div > label {
+    height: 32px;
+    width: 32px;
+}
+
+.Sidebar > div > ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px     0;
+}
+
+.Sidebar > div > ul li {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, #9ACBD0 0%, #48A6A7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Sidebar > div > ul li:hover {
+    color: white;
+    background: linear-gradient(315deg, #9ACBD0 0%, #48A6A7 100%);
+    -webkit-text-fill-color: white;
+}
+
+#Hamburger:checked ~ .Sidebar {
+    width: 0px;
+    transform: translateX(-32px);
+    transition: 0.5s all ease 0.25s;
+}
+
+#Hamburger:checked ~ .Sidebar > div {
+    transform: translateX(-425px);
+    transition: 0.5s all ease;
+}
+
+@media (max-width : 376px) {
+    
+    .Sidebar {
+        padding: 0px;
+    }
+
+    .Sidebar > div {
+        border-radius: 0px;
+    }
+
+}
