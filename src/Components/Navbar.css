@@ -25,12 +25,22 @@ nav ul {
 }
 
 nav ul li {
-    color: white;
+    height: 38px;
     background-color: transparent;
     border-radius: 32px;
-    padding: 10px 16px;
     margin: 0 0 0 16px;
     transition: 0.5s all ease;
+}
+
+nav ul li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    outline: none;
+
 }
 
 nav ul li:hover {

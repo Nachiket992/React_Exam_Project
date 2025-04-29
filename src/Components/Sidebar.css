@@ -8,7 +8,7 @@
     padding: 16px;
     overflow: hidden;
     transform: translateX(0px);
-    transition: 0.4s all ease;
+    transition: 0.4s background-color ease;
 }
 
 .Sidebar > div {
@@ -43,20 +43,29 @@
 .Sidebar > div > ul {
     list-style: none;
     padding: 0;
-    margin: 16px     0;
+    margin: 16px 0;
 }
 
 .Sidebar > div > ul li {
     height: 60px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(315deg, #9ACBD0 0%, #48A6A7 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.Sidebar > div > ul li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+
 .Sidebar > div > ul li:hover {
     color: white;
     background: linear-gradient(315deg, #9ACBD0 0%, #48A6A7 100%);
@@ -66,7 +75,8 @@
 #Hamburger:checked ~ .Sidebar {
     width: 0px;
     transform: translateX(-32px);
-    transition: 0.4s all ease 0.2s;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.4s width ease 0.4s;
 }
 
 #Hamburger:checked ~ .Sidebar > div {

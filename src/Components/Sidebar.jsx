@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
@@ -20,12 +21,12 @@ const Sidebar = () => {
                     </div>
 
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Services</li>
-                        <li>Log In</li>
-                        <li>Sign Up</li>
+                        <li><Link to={'/Home'} >Home</Link></li>
+                        <li><Link>About</Link></li>
+                        <li><Link>Services</Link></li>
+                        <li><Link>Services</Link></li>
+                        <li><Link to={'/Login'}>Log In</Link> </li>
+                        <li><Link to={'/'}>Sign Up</Link></li>
                     </ul>
 
                 </div>
